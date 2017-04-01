@@ -1,0 +1,67 @@
+/*global stuff*/
+
+	body {
+		background-color: pink;
+		padding-left: 30px;			/* from the edge of the window, leftside, move entire body over 30px */
+		color: white;				/* font color */
+		font-size: 18px;			/* font size */
+		font-family: ariel, helvetica, sans-serif;
+	}
+
+	h1 {
+		font-size: 25px;			/* header font size */
+	}
+	legend {
+		font-size: 20px;
+
+	}
+/* descendant selector, target children of the parent element whether they're immediate children, or further down the hierarchy */
+/*contact information block*/
+	fieldset {				
+		padding: 10px;
+		border: 1px solid black;
+	}
+
+
+	/*labels are text first name, last name, email, phone, questions, etc*/
+	.demo label {
+		display: block;
+		margin-bottom: 5px;
+	}
+
+/*here we are selecting the text field and pull down for the user to place their answers into*/
+	.demo input, .demo select {
+		display: block;
+		width: 200px;
+		margin-bottom: 15px;
+	}
+
+	.demo input {
+		padding: 3px;
+	}
+
+
+.demo input::placeholder {
+	color: red;
+	margin-bottom: 20px;
+}
+
+.demo select {
+	cursor: pointer;
+}
+
+.demo input:invalid {
+	border: 2px solid red;
+}
+
+.radio label, .radio input {
+	display: inline-block;
+}
+
+.demo button {
+	width: 200px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+

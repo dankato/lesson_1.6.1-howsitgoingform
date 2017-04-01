@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="main2.css">
+	</head>
+	<body>
+		
+
+		<!--  Creating a containment for the form  -->
+		<form action="demo" action="#" method="post">
+
+			<fieldset name="contactinfo">
+				<legend>How is it going?</legend>
+				<label for="firstname">First Name</label>
+					<input type="text" placeholder="Han" name="firstname" id="firstname">
+				<label for="lastname">Last Name</label>
+					<input type="text" placeholder="Solo" name="lastname" id="lastname">
+				<label for="email">Email</label>
+					<input type="email" placeholder="hsolo@starwars.com" name="email" id="email">
+				<label for="tel">Phone</label>
+					<input type="phone" pattern="[0-0/-]*" placeholder="555-555-5555" name="phone" id="phone" title="A typical phone number" required>
+			
+<br>
+<br>
+			<section>
+				<label for="feelings" class="question">How do you feel about it?</label>
+					<select name="feelings" id="feelings" required>
+						<option value="0">Great</option>
+						<option value="1" selected>Pretty Good</option>
+						<option value="2">Definitely Great</option>
+					</select>
+			</section>
+
+			<p class="question">How do you really feel, though?</p>
+			
+			<input type="radio" name="feelings2" id="answergreat1" value="0" checked>
+			<label for="answergreat1">Great</label>
+			
+			<input type="radio" name="feelings2" id="answergreat2" value="1">
+			<label for="answergreat2">Seriously Great</label>
+		
+			<input type="radio"	name="feelings2" id="answergreat3" value="2">
+			<label for="answergreat3">Not Great</label>
+
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+</fieldset>
+		</form>
+
+	</body>
+</html>
